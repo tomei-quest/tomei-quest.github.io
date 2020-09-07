@@ -7,7 +7,7 @@
 }
 
 html {
-  line-height: 1.4;
+  line-height: 1.5;
   font-family: sans-serif;
   -ms-overflow-style: scrollbar;
 }
@@ -35,10 +35,8 @@ main {
 
 main h1 {
   margin: 100px 0;
-}
-
-main h1 img {
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
 }
 
 #pr {
@@ -55,13 +53,16 @@ main h1 img {
 }
 
 #description ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
 #description li {
   margin-bottom: 10px;
   padding-left: 18px;
-  background: url(/assets/img/marker.svg) left/10px no-repeat ;
+  background: url(/assets/img/marker.svg) 0px 5px/10px no-repeat ;
+  line-height: 1.6;
 }
 
 footer {
@@ -92,7 +93,6 @@ footer .links {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 40vw;
 }
 
 footer .link {
@@ -103,4 +103,39 @@ footer .link {
 footer .copyright {
   margin: 0;
   text-align: right;
+}
+
+@media (max-width: 767px) {
+
+  main {
+    padding: 0 20px 30px;
+  }
+
+  main h1 {
+    margin: 50px 0;
+  }
+
+  #pr {
+    padding: 50px 0;
+    font-size: 1.6rem;
+  }
+
+  #description {
+    padding: 50px 0;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 120px;
+  }
+
+  footer .links {
+    flex-grow: 0;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
 }
