@@ -13,7 +13,95 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
   font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px 100px;
+}
+
+main h1 {
+  margin: 100px 0;
+}
+
+main h1 img {
+  width: 500px;
+}
+
+#pr {
+  padding: 100px 0;
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 1.8;
+  color: rgb(108, 195, 174);
+}
+
+#description {
+  padding: 100px 0;
+  font-size: 1.1rem;
+}
+
+#description ul {
+  list-style-type: none;
+}
+
+#description li {
+  margin-bottom: 10px;
+  padding-left: 18px;
+  background: url(/assets/img/marker.svg) left/10px no-repeat ;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  width: 100%;
+  height: 80px;
+  margin-top: auto;
+  padding: 0 30px;
+  background-color: rgb(93, 98, 132);
+  color: rgb(250, 250, 250);
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: rgb(250, 250, 250);
+}
+
+footer a:hover {
+  color: rgb(210, 210, 210);
+}
+
+footer .links {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 40vw;
+}
+
+footer .link {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+footer .copyright {
+  margin: 0;
+  text-align: right;
 }
