@@ -30,25 +30,45 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 30px 100px;
+  padding: 0;
 }
 
 main h1 {
   margin: 100px 0;
-  width: 90%;
+  width: 80%;
   max-width: 500px;
 }
 
 #pr {
-  padding: 100px 0;
+  width: 100%;
+  padding: 100px 30px;
+  border-top: solid 50px rgb(255, 211, 55);
+  border-bottom: solid 50px rgb(255, 211, 55);
   font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
   line-height: 1.8;
   color: rgb(108, 195, 174);
 }
 
+.background1 {
+  width: 100%;
+  height: 140px;
+  margin-bottom: -35px;
+  z-index: 1;
+  background: url(/assets/img/background1.svg) center/850px no-repeat;
+}
+
+.background2 {
+  width: 100%;
+  height: 140px;
+  margin-top: -130px;
+  z-index: 1;
+  background: url(/assets/img/background2.svg) center/850px no-repeat;
+}
+
 #description {
-  padding: 100px 0;
+  padding: 100px 30px;
   font-size: 1.1rem;
 }
 
@@ -61,7 +81,7 @@ main h1 {
 #description li {
   margin-bottom: 10px;
   padding-left: 18px;
-  background: url(/assets/img/marker.svg) 0px 5px/10px no-repeat ;
+  background: url(/assets/img/marker.svg) 0px 5px/10px no-repeat;
   line-height: 1.6;
 }
 
@@ -107,21 +127,31 @@ footer .copyright {
 
 @media (max-width: 767px) {
 
-  main {
-    padding: 0 20px 30px;
-  }
-
   main h1 {
-    margin: 50px 0;
+    margin: 50px 0 30px;
   }
 
   #pr {
-    padding: 50px 0;
+    padding: 50px 20px;
+    border-top-width: 30px;
+    border-bottom-width: 30px;
     font-size: 1.6rem;
   }
 
+  .background1 {
+    height: 50px;
+    margin-bottom: -12px;
+    background-size: 300px;
+  }
+
+  .background2 {
+    height: 50px;
+    margin-top: -58px;
+    background-size: 300px;
+  }
+
   #description {
-    padding: 50px 0;
+    padding: 50px 20px;
   }
 
   footer {
