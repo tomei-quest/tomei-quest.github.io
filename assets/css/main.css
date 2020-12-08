@@ -85,6 +85,32 @@ main h1 {
   line-height: 1.6;
 }
 
+#store {
+  margin: 0 0 130px;
+  padding: 30px 30px;
+}
+
+#store p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#store .store-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#store img.google-play {
+  height: 102px;
+}
+
+#store img.app-store {
+  margin-left: 50px;
+  height: 70px;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -152,6 +178,23 @@ footer .copyright {
 
   #description {
     padding: 50px 20px;
+  }
+
+  #store {
+    margin: 0 0 80px;
+    padding: 0 20px;
+  }
+
+  #store p {
+    font-size: 1.6rem;
+  }
+
+  #store .store-links {
+    flex-direction: column;
+  }
+
+  #store img.app-store {
+    margin: 0;
   }
 
   footer {
