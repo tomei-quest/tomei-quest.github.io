@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   background-color: rgb(255, 255, 255);
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', Helvetica, Arial, Verdana, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -33,10 +33,18 @@ main {
   padding: 0;
 }
 
-main h1 {
-  margin: 100px 0;
+main #logo {
+  margin-top: 100px;
   width: 80%;
   max-width: 500px;
+}
+
+main h1 {
+  margin-bottom: 70px;
+  padding-left: 40px;
+  letter-spacing: 40px;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 #pr {
@@ -91,8 +99,9 @@ main h1 {
 }
 
 #store p {
-  font-size: 2rem;
   text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 #store .store-links {
@@ -153,8 +162,14 @@ footer .copyright {
 
 @media (max-width: 767px) {
 
+  main #logo {
+    margin-top: 50px;
+  }
+
   main h1 {
-    margin: 50px 0 30px;
+    padding-left: 14px;
+    letter-spacing: 14px;
+    font-size: 1.8rem;
   }
 
   #pr {
